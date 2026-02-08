@@ -6,6 +6,9 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+console.log("Starting Backend...");
+console.log("Using Port:", PORT);
+
 // Middleware
 app.use(cors());
 app.use(express.json());
