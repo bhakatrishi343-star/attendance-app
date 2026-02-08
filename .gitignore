@@ -1,0 +1,16 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Environment Variables
+.env
+.env.local
+
+# Expo
+.expo
+web-build
+dist
+
+# Misc
+.DS_Store
+*.log
