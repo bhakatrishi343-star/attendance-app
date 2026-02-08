@@ -26,9 +26,9 @@ const authRoutes = require('./routes/auth');
 const attendanceRoutes = require('./routes/attendance');
 const adminRoutes = require('./routes/admin');
 
-app.use('/auth', authRoutes);
-app.use('/attendance', attendanceRoutes);
-app.use('/admin', adminRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/attendance', attendanceRoutes);
+app.use('/api/admin', adminRoutes);
 
 app.get('/', (req, res) => {
     res.send('Automated Attendance Backend is Running');
