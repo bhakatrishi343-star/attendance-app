@@ -11,10 +11,12 @@ if (!fs.existsSync(dataDir)) {
 // Initialize Datastores
 const users = Datastore.create({ filename: path.join(dataDir, 'users.db'), autoload: true });
 const attendance = Datastore.create({ filename: path.join(dataDir, 'attendance.db'), autoload: true });
+const subjects = Datastore.create({ filename: path.join(dataDir, 'subjects.db'), autoload: true });
 
 console.log("Database Initialized.");
 
 module.exports = {
   users,
-  attendance
+  attendance,
+  subjects
 };

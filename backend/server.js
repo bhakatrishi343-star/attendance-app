@@ -25,10 +25,12 @@ app.use('/uploads', express.static(uploadsDir));
 const authRoutes = require('./routes/auth');
 const attendanceRoutes = require('./routes/attendance');
 const adminRoutes = require('./routes/admin');
+const subjectRoutes = require('./routes/subjects');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/attendance', attendanceRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/subjects', subjectRoutes);
 
 app.get('/', (req, res) => {
     res.send('Automated Attendance Backend is Running');
